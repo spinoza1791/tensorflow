@@ -410,7 +410,8 @@ if __name__ == '__main__':
   parser.add_argument(
       '--wanted_words',
       type=str,
-      default='yes,no,up,down,left,right,on,off,stop,go',
+      #default='yes,no,up,down,left,right,on,off,stop,go',
+      default='yes,no',
       help='Words to use (others will be added to an unknown label)',)
   parser.add_argument(
       '--train_dir',
@@ -420,7 +421,7 @@ if __name__ == '__main__':
   parser.add_argument(
       '--save_step_interval',
       type=int,
-      default=100,
+      default=1000,
       help='Save model checkpoint every save_steps.')
   parser.add_argument(
       '--start_checkpoint',
