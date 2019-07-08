@@ -523,7 +523,7 @@ def create_low_latency_svdf_model(fingerprint_input, model_settings,
 
   # Set number of units (i.e. nodes) and rank.
   rank = 2
-  num_units = 1280
+  num_units = 640 #1280
   # Number of filters: pairs of feature and time filters.
   num_filters = rank * num_units
   # Create the runtime memory: [num_filters, batch, input_time_size]
